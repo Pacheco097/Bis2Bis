@@ -71,21 +71,21 @@ if (isset($_GET)) {
 			break;
 		}
 		if ($jogador >= 46) {
-		  $contaRodada = 0;
+		  $rodada = 0;
 		  $jogador1 = 'A';
 
 
 		for ($i=0; $i <= $jogador; $i++) { 
-			if (($contaRodada == $nova) && $jogador1 == 'B') {
+			if (($rodada == $nova) && $jogador1 == 'B') {
 			          $jogador1 = 'A';
-			          $contaRodada = 0;
+			          $rodada = 0;
 			        }
-			else if (($contaRodada == $nova) && $jogador1 == 'A') {
+			else if (($rodada == $nova) && $jogador1 == 'A') {
 			          $jogador1 = 'B';
-			          $contaRodada = 0;
+			          $rodada = 0;
 			        }
 
-			        $contaRodada++;
+			        $rodada++;
 			      }
 			      echo "Saca jogador ".$jogador1;
 			      echo "</br> $jogador";
